@@ -1,9 +1,44 @@
 doctype html
 html
 	head
-		title='Title of Website'
+		title='Avery Thomas Portfolio'
 		meta(name="viewport" content="width=device-width, intial-scale=1")
+		meta(name="msappication-TileColor" content="ffffff")
+		// STYLE SHEET
+		link(href="styles/style.css", rel="stylesheet", type="text/css")
+		// JAVASCRIPT LINKS
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js", type="text/javascript")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js", type="text/javascript")
+		script(src="scripts/app.js", type="text/javascript")
 	body
-		div
-			h1 Test
+		div.intro
+			img(src="images/logo.png")
+		div.container
+			div#about
+				h2 About Me.
+				div.about-text
+					<P>Want to know more about my work experience? Download a copy of my <a href="averyethomas.com/resume" target="_blank">resume</a> or get in touch:</P>
+					div.social
+						ul
+							li
+								a(href="mailto:averyethomas@gmail.com" target="_blank")
+									img(src="images/social/email.png")
+			div#work
+				h2 Recent Work
+				div.work-item
+					div.work-image
+						img(src="")
+					div.work-text
+						h3 Executive Orders
+						h4 Personal Project
+						p All of the news about President Donald Trump's executive orders in his first weeks in office caught my attention. Using data fromt he Federal Register's API (which I accessed via AngularJS), I created this website to veiw the number of executive orders signed not only by Donald Trump, but 3 of his most recent predecessors to see if his activity in his first 100 days in office is standard or if it deviates from tradition. 
+						h5 Skills Used:
+						div.skills
+							ul
+								li HTML
+								li CSS / SCSS
+								li JAVASCRIPT
+								li ANGULARJS
+								li DATA VISUALIZATION
+						a.launch-link(href="http://averyethomas.com/executive-orders" target="_blank") VIEW WEBSITE
 		footer
