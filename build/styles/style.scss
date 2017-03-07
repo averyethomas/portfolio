@@ -46,7 +46,7 @@ table {
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
 $teal: #003541;
-$green: #1b2c1a;
+$green: #132110;
 $light-green: #879c01;
 
 body{
@@ -138,6 +138,15 @@ body{
           li{
             margin: 7px;
             display: inline-block;
+            a{
+              border-bottom: none;
+              transition: none;
+              
+              &:hover{
+                text-decoration: none;
+                border: none!important;
+              }
+            }
             img{
               height: 20px;
             }
@@ -258,6 +267,16 @@ body{
     }
     .social{
       text-align: center;
+      ul{
+        li{
+          a{
+            border-bottom: none;
+            &:hover{
+              border-bottom: none!important;
+            }
+          }
+        }
+      }
 
           @media all and (min-width: 768px){
         float: right;
@@ -267,12 +286,11 @@ body{
           li{
             margin: 0 10px 0 0;
             a{
+              border-bottom: none;
+              transition: none;
               &:hover{
                 text-decoration: none;
-                border: none;
-              }
-              &:visited{
-                text-decoration: none;
+                border-bottom: none !important;
               }
             }
           }
