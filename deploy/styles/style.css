@@ -44,7 +44,7 @@ table {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #003541; }
+  color: #1b2c1a; }
   body h1 {
     font-size: 40px; }
   body h2 {
@@ -71,14 +71,14 @@ body {
     font-weight: 500;
     margin: 10px auto;
     border-bottom: 2px solid transparent;
-    color: #003541;
+    color: #879c01;
     text-decoration: none;
     white-space: nowrap;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
     body a:hover {
       text-decoration: none;
-      border-bottom: 2px solid #003541; }
+      border-bottom: 2px solid #879c01; }
   body .container {
     padding: 0 20px;
     max-width: 1000px;
@@ -86,7 +86,8 @@ body {
   body .intro {
     height: 400px;
     width: 100%;
-    background: url("https://scontent-iad3-1.cdninstagram.com/t51.2885-15/e35/14596881_1217613554959095_4469510562136457216_n.jpg?ig_cache_key=MTQxODgyNzQzODM1MTM3MDUzMA%3D%3D.2") no-repeat 50% 50%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/background.JPG") no-repeat 50% 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/background.JPG") no-repeat 50% 50%;
     background-size: cover;
     position: relative; }
     body .intro img {
@@ -162,18 +163,18 @@ body {
         text-align: center;
         color: #fff;
         border-radius: 3px;
-        background-color: #003541;
+        background-color: #879c01;
         padding: 6px 8px;
-        border: 2px solid #003541; }
+        border: 2px solid #879c01; }
         @media all and (min-width: 768px) {
           body #work .work-item .work-text a {
             margin: 15px 0; } }
         body #work .work-item .work-text a:hover {
-          border: 2px solid #003541;
+          border: 2px solid #879c01;
           background-color: #fff;
-          color: #003541; }
+          color: #879c01; }
   body footer {
-    border-top: 2px solid #003541; }
+    border-top: 2px solid #1b2c1a; }
     body footer .copyright {
       text-align: center; }
       @media all and (min-width: 768px) {
@@ -191,7 +192,12 @@ body {
           float: right;
           display: inline-block; }
           body footer .social ul li {
-            margin: 0 10px 0 0; } }
+            margin: 0 10px 0 0; }
+            body footer .social ul li a:hover {
+              text-decoration: none;
+              border: none; }
+            body footer .social ul li a:visited {
+              text-decoration: none; } }
       body footer .social ul li {
         margin: 10px;
         display: inline-block; }

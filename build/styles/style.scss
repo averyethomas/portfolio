@@ -46,11 +46,12 @@ table {
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
 $teal: #003541;
-$green: #00b461;
+$green: #1b2c1a;
+$light-green: #879c01;
 
 body{
   font-family: 'Roboto', sans-serif;
-  color: #003541;
+  color: $green;
 
   h1{
     font-size: 40px;
@@ -90,14 +91,14 @@ body{
     font-weight: 500;
     margin: 10px auto;
     border-bottom: 2px solid transparent;
-    color: $teal;
+    color: $light-green;
     text-decoration: none;
     white-space: nowrap;
     transition: all 0.5s ease;
 
     &:hover{
       text-decoration: none;
-      border-bottom: 2px solid $teal;
+      border-bottom: 2px solid $light-green;
     }
   }
 
@@ -110,7 +111,7 @@ body{
   .intro{
     height: 400px;
     width: 100%;
-    background: url('https://scontent-iad3-1.cdninstagram.com/t51.2885-15/e35/14596881_1217613554959095_4469510562136457216_n.jpg?ig_cache_key=MTQxODgyNzQzODM1MTM3MDUzMA%3D%3D.2') no-repeat 50% 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('../images/background.JPG') no-repeat 50% 50%;
     background-size: cover;
     position: relative;
 
@@ -222,25 +223,25 @@ body{
           text-align: center;
           color: #fff;
           border-radius: 3px;
-          background-color: $teal;
+          background-color: $light-green;
           padding: 6px 8px;
-          border: 2px solid $teal;
+          border: 2px solid $light-green;
 
           @media all and (min-width: 768px){
             margin: 15px 0;
           }
 
           &:hover{
-            border: 2px solid $teal;
+            border: 2px solid $light-green;
             background-color: #fff;
-            color: $teal;
+            color: $light-green;
           }
         }
       }
     }
   }
   footer{
-    border-top: 2px solid $teal;
+    border-top: 2px solid $green;
 
     .copyright{
       text-align: center;
@@ -265,6 +266,15 @@ body{
         ul{
           li{
             margin: 0 10px 0 0;
+            a{
+              &:hover{
+                text-decoration: none;
+                border: none;
+              }
+              &:visited{
+                text-decoration: none;
+              }
+            }
           }
         }
       }
