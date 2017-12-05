@@ -128,14 +128,6 @@ body {
   body #work .work-item {
     padding: 20px 0;
     overflow: hidden; }
-    @media all and (min-width: 768px) {
-      body #work .work-item:nth-of-type(2n + 2) .work-image {
-        float: right; } }
-    @media all and (min-width: 768px) {
-      body #work .work-item:nth-of-type(2n + 2) .work-text {
-        text-align: right; }
-        body #work .work-item:nth-of-type(2n + 2) .work-text a {
-          float: right; } }
     body #work .work-item .work-image {
       padding: 20px; }
       @media all and (min-width: 768px) {
