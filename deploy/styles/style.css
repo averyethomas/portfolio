@@ -84,6 +84,7 @@ body {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
     body a:hover {
+      cursor: pointer;
       text-decoration: none;
       border-bottom: 2px solid #879c01; }
   body .container {
@@ -117,12 +118,13 @@ body {
         body #about .about-text .social ul li a {
           border-bottom: none;
           -webkit-transition: none;
-          transition: none; }
+          transition: none;
+          font-size: 22px;
+          color: #132110; }
           body #about .about-text .social ul li a:hover {
+            color: #879c01;
             text-decoration: none;
             border: none !important; }
-        body #about .about-text .social ul li img {
-          height: 20px; }
   body #work h2 {
     text-align: center; }
   body #work .work-item {
@@ -214,27 +216,20 @@ body {
         font-size: 13px; }
     body footer .social {
       text-align: center; }
-      body footer .social ul li a {
-        border-bottom: none; }
-        body footer .social ul li a:hover {
-          border-bottom: none !important; }
+      body footer .social ul li {
+        margin: 7px;
+        display: inline-block; }
+        body footer .social ul li a {
+          border-bottom: none;
+          -webkit-transition: none;
+          transition: none;
+          font-size: 15px;
+          color: #132110; }
+          body footer .social ul li a:hover {
+            color: #879c01;
+            text-decoration: none;
+            border: none !important; }
       @media all and (min-width: 768px) {
         body footer .social {
           float: right;
-          display: inline-block; }
-          body footer .social ul li {
-            margin: 0 10px 0 0; }
-            body footer .social ul li a {
-              border-bottom: none;
-              -webkit-transition: none;
-              transition: none; }
-              body footer .social ul li a:hover {
-                text-decoration: none;
-                border-bottom: none !important; } }
-      body footer .social ul li {
-        margin: 10px;
-        display: inline-block; }
-        body footer .social ul li a {
-          font-size: 12px; }
-          body footer .social ul li a img {
-            height: 20px; }
+          display: inline-block; } }
