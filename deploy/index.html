@@ -27,6 +27,16 @@
 	    <script src="scripts/app.js"></script>
 	    <!-- FONT AWESOME-->
 	    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	    <!-- GOOGLE ANALYTICS -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98584676-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-98584676-1');
+		</script>
+
     </head>
 	<body>
 	    <div class="intro">
@@ -42,14 +52,14 @@
 					<p>I live in Austin, TX and work as a web developer at <a target="_blank" href="https://www.lifeatkwri.com/">Keller Williams Realty International</a>. In addition to my job, I am currently doing some freelance and pro-bono work as well as a few personal projects to improve skills and explore new things.</p>
 					<p>I am a proud graduate of the <a href="http://www.unc.edu/" target="_blank">University of North Carolina's</a> <a href="http://mj.unc.edu/" target="_blank">School of Media and Journalism</a>. I studied web development in journalism along with a second major in media theory and production from the university's communications department. (<a target="_blank" href="https://i.makeagif.com/media/3-04-2015/rW8xa7.gif">Go Heels!</a>)</p>
 					<p>Through my education and career opportunities, I have developed a passion for storytelling in a variety of ways. I love hearing people talk about personal experiences AND analyzing data to find the story in the numbers. Web development has provided a great way for me to explore different mediums of storytelling by using code to cultivate a unique experience with every project.</p>
-					<p>Want to know more about my work experience? Download a copy of my <a href="/avery-thomas-resume.pdf" target="_blank">resume</a> or get in touch:</p>
+					<p>Want to know more about my work experience? Download a copy of my <a href="/avery-thomas-resume.pdf" target="_blank" onclick="gtag('event', 'Download', { 'event_category' : 'Intro', 'event_label' : 'Resume' })">resume</a> or get in touch:</p>
 			        <div class="social">
 			            <ul>
-			            	<li><a href="mailto:averyethomas@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-							<li><a href="http://instagram.com/averyethomas" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="http://twitter.com/averyethomas" target="_blank"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/averyethomas/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="http://github.com/averyethomas" target="_blank"><i class="fab fa-github"></i></a></li>
+			            	<li><a href="mailto:averyethomas@gmail.com" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'Email' })"><i class="far fa-envelope"></i></a></li>
+							<li><a href="http://instagram.com/averyethomas" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'Instagram' })"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="http://twitter.com/averyethomas" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'Twitter' })"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/averyethomas/" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'LinkedIn' })"><i class="fab fa-linkedin-in"></i></a></li>
+							<li><a href="http://github.com/averyethomas" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'Github' })"><i class="fab fa-github"></i></a></li>
 			            </ul>
 			        </div>
         		</div>
@@ -58,7 +68,7 @@
 	  			<h2>Recent</h2>
 	  			<div class="work-item">
 		        	<div class="work-image">
-			        	<a href="https://outfront.kw.com/performance/2018-the-year-in-innovation/" target="_blank">
+			        	<a href="https://outfront.kw.com/performance/2018-the-year-in-innovation/" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Outfront Performance' })">
 				        	<img src="images/kw-outfront-performance.png" alt="Sample of KW MAPS Coaching"/>
 				        </a>
 				    </div>
@@ -78,12 +88,12 @@
 				                <li>WORDPRESS</li>
 							</ul>
 						</div>
-						<a class="launch-link" href="https://outfront.kw.com/performance/2018-the-year-in-innovation/" target="_blank">VIEW STORY</a>
+						<a class="launch-link" href="https://outfront.kw.com/performance/2018-the-year-in-innovation/" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Outfront Performance' })">VIEW STORY</a>
 					</div>
 		        </div>
 	  			<div class="work-item">
 		        	<div class="work-image">
-			        	<a href="https://mapscoaching.com" target="_blank">
+			        	<a href="https://mapscoaching.com" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Maps Coaching' })">
 				        	<img src="images/kw-maps-coaching.png" alt="Sample of KW MAPS Coaching"/>
 				        </a>
 				    </div>
@@ -102,12 +112,12 @@
 				                <li>WORDPRESS</li>
 							</ul>
 						</div>
-						<a class="launch-link" href="https://mapscoaching.com" target="_blank">VIEW WEBSITE</a>
+						<a class="launch-link" href="https://mapscoaching.com" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'MAPS Coaching' })">VIEW WEBSITE</a>
 					</div>
 		        </div>
 		        <div class="work-item">
 		        	<div class="work-image">
-			        	<a href="http://averyethomas.com/title-ix" target="_blank">
+			        	<a href="http://averyethomas.com/title-ix" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Title IX' })">
 				        	<img src="images/title-ix.png" alt="Sample of Outfront Magazine"/>
 				        </a>
 				    </div>
@@ -125,12 +135,12 @@
 				                <li>D3.js</li>
 							</ul>
 						</div>
-						<a class="launch-link" href="http://averyethomas.com/title-ix" target="_blank">VIEW STORY</a>
+						<a class="launch-link" href="http://averyethomas.com/title-ix" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Title IX' })">VIEW STORY</a>
 					</div>
 		        </div>
 		        <div class="work-item">
 		        	<div class="work-image">
-			        	<a href="https://outfront.kw.com" target="_blank">
+			        	<a href="https://outfront.kw.com" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Outfront' })">
 				        	<img src="images/outfront.png" alt="Sample of Outfront Magazine"/>
 				        </a>
 				    </div>
@@ -149,11 +159,11 @@
 				                <li>WORDPRESS</li>
 							</ul>
 						</div>
-						<a class="launch-link" href="https://outfront.kw.com" target="_blank">VIEW WEBSITE</a>
+						<a class="launch-link" href="https://outfront.kw.com" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Outfront' })">VIEW WEBSITE</a>
 					</div>
 		        </div>
 		        <div class="work-item">
-			        <div class="work-image"><a href="http://juggernautwine.com" target="_blank"><img src="images/juggernaut.png" alt="Sample of Juggernaut Wine Home Page"/></a></div>
+			        <div class="work-image"><a href="http://juggernautwine.com" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Juggernaut' })"><img src="images/juggernaut.png" alt="Sample of Juggernaut Wine Home Page"/></a></div>
 					<div class="work-text">
 		            	<h3>Juggernaut Wine</h3>
 						<h4>BFG | Spring 2018</h4>
@@ -168,11 +178,11 @@
 				                <li>WORDPRESS</li>
 							</ul>
 						</div>
-						<a class="launch-link" href="http://juggernautwine.com" target="_blank">VIEW WEBSITE</a>
+						<a class="launch-link" href="http://juggernautwine.com" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Juggernaut' })">VIEW WEBSITE</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="http://averyethomas.com/historic-hurricane-season" target="_blank"><img src="images/hurricane.png" alt="Sample of Historic Hurricane Season Page"/></a></div>
+		          <div class="work-image"><a href="http://averyethomas.com/historic-hurricane-season" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Hurricane Season' })"><img src="images/hurricane.png" alt="Sample of Historic Hurricane Season Page"/></a></div>
 		          <div class="work-text">
 		            <h3>Historic Hurricane Season</h3>
 		            <h4>Personal Project | Winter 2017</h4>
@@ -188,11 +198,11 @@
 		                <li>HIGHMAPS JS</li>
 		                <li>GOOGLE MAPS API</li>
 		              </ul>
-		            </div><a class="launch-link" href="http://averyethomas.com/historic-hurricane-season" target="_blank">VIEW STORY</a>
+		            </div><a class="launch-link" href="http://averyethomas.com/historic-hurricane-season" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Hurricane Season' })">VIEW STORY</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="http://molloykayeretail.com" target="_blank"><img src="images/molloykaye.png" alt="Sample of Molloy Kaye Retail Lisitings Page"/></a></div>
+		          <div class="work-image"><a href="http://molloykayeretail.com" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Molloy Kaye Retail' })"><img src="images/molloykaye.png" alt="Sample of Molloy Kaye Retail Lisitings Page"/></a></div>
 		          <div class="work-text">
 		            <h3>Molloy Kaye Retail</h3>
 		            <h4>Freelance | Winter 2017</h4>
@@ -206,11 +216,11 @@
 		                <li>JAVASCRIPT / ANGULARJS</li>
 		                <li>WORDPRESS</li>
 		              </ul>
-		            </div><a class="launch-link" href="http://molloykayeretail.com" target="_blank">VIEW WEBSITE</a>
+		            </div><a class="launch-link" href="http://molloykayeretail.com" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Molloy Kaye Retail' })">VIEW WEBSITE</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="https://affresh.com" target="_blank"><img src="images/affresh.png" alt="Sample of Affresh Product Page"/></a></div>
+		          <div class="work-image"><a href="https://affresh.com" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Affresh' })"><img src="images/affresh.png" alt="Sample of Affresh Product Page"/></a></div>
 		          <div class="work-text">
 		            <h3>Affresh</h3>
 		            <h4>BFG | Fall 2017</h4>
@@ -223,11 +233,11 @@
 		                <li>JAVASCRIPT / ANGULARJS</li>
 		                <li>WORDPRESS</li>
 		              </ul>
-		            </div><a class="launch-link" href="https://affresh.com" target="_blank">VIEW WEBSITE</a>
+		            </div><a class="launch-link" href="https://affresh.com" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Affresh' })">VIEW WEBSITE</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="http://averyethomas.com/off-the-coast" target="_blank"><img src="images/off-the-coast.png" alt="Sample image of Off the Coast project"/></a></div>
+		          <div class="work-image"><a href="http://averyethomas.com/off-the-coast" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Off the Coast' })"><img src="images/off-the-coast.png" alt="Sample image of Off the Coast project"/></a></div>
 		          <div class="work-text">
 		            <h3>Off The Coast of the Carolinas</h3>
 		            <h4>Personal Project | Spring 2017</h4>
@@ -240,11 +250,11 @@
 		                <li>JAVASCRIPT / ANGULARJS</li>
 		                <li>VIDEOGRAPHY / ADOBE PREMIERE</li>
 		              </ul>
-		            </div><a class="launch-link" href="http://averyethomas.com/off-the-coast" target="_blank">VIEW STORY</a>
+		            </div><a class="launch-link" href="http://averyethomas.com/off-the-coast" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Off the Coast' })">VIEW STORY</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="http://sutterhome.com/" target="_blank"><img src="images/sutter-home.png" alt="Sample of Sutter Home Family of Wines Page"/></a></div>
+		          <div class="work-image"><a href="http://sutterhome.com/" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Sutter Home' })"><img src="images/sutter-home.png" alt="Sample of Sutter Home Family of Wines Page"/></a></div>
 		          <div class="work-text">
 		            <h3>Sutter Home Wines</h3>
 		            <h4>BFG | Spring 2017</h4>
@@ -257,11 +267,11 @@
 		                <li>JAVASCRIPT / ANGULARJS</li>
 		                <li>WORDPRESS</li>
 		              </ul>
-		            </div><a class="launch-link" href="http://sutterhome.com/" target="_blank">VIEW WEBSITE</a>
+		            </div><a class="launch-link" href="http://sutterhome.com/" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Sutter Home' })">VIEW WEBSITE</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="http://averyethomas.com/executive-orders" target="_blank"><img src="images/executive-order.png" alt="Sample image of executive order project"/></a></div>
+		          <div class="work-image"><a href="http://averyethomas.com/executive-orders" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Executive Orders' })"><img src="images/executive-order.png" alt="Sample image of executive order project"/></a></div>
 		          <div class="work-text">
 		            <h3>Executive Orders</h3>
 		            <h4>Personal Project | Spring 2017</h4>
@@ -274,11 +284,11 @@
 		                <li>JAVASCRIPT / ANGULARJS</li>
 		                <li>DATA VISUALIZATION</li>
 		              </ul>
-		            </div><a class="launch-link" href="http://averyethomas.com/executive-orders" target="_blank">VIEW STORY</a>
+		            </div><a class="launch-link" href="http://averyethomas.com/executive-orders" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Executive Orders' })">VIEW STORY</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="http://adventures.averyethomas.com" target="_blank"><img src="images/adventures.png" alt="Sample image of adventures travel blog project"/></a></div>
+		          <div class="work-image"><a href="http://adventures.averyethomas.com" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Travel Photography Blog' })"><img src="images/adventures.png" alt="Sample image of adventures travel blog project"/></a></div>
 		          <div class="work-text">
 		            <h3>Travel Photography Blog</h3>
 		            <h4>Personal Project | Spring 2017</h4>
@@ -292,11 +302,11 @@
 		                <li>WORDPRESS</li>
 		                <li>GOOGLE MAPS API</li>
 		              </ul>
-		            </div><a class="launch-link" href="http://adventures.averyethomas.com" target="_blank">VIEW WEBSITE</a>
+		            </div><a class="launch-link" href="http://adventures.averyethomas.com" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Travel Photography Blog' })">VIEW WEBSITE</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="http://colorandstory.com" target="_blank"><img src="images/colorandstory.png" alt="Sample image of colorandstory project"/></a></div>
+		          <div class="work-image"><a href="http://colorandstory.com" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Colorandstory' })"><img src="images/colorandstory.png" alt="Sample image of colorandstory project"/></a></div>
 		          <div class="work-text">
 		            <h3>Colorandstory</h3>
 		            <h4>Freelance | Winter 2016</h4>
@@ -309,11 +319,11 @@
 		                <li>JAVASCRIPT / ANGULARJS</li>
 		                <li>WORDPRESS</li>
 		              </ul>
-		            </div><a class="launch-link" href="http://colorandstory.com" target="_blank">VIEW WEBSITE</a>
+		            </div><a class="launch-link" href="http://colorandstory.com" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Colorandstory' })">VIEW WEBSITE</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="https://bfgcom.com" target="_blank"><img src="images/bfg.png" alt="Sample image of Off the Coast project"/></a></div>
+		          <div class="work-image"><a href="https://bfgcom.com" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'BFG' })"><img src="images/bfg.png" alt="Sample image of Off the Coast project"/></a></div>
 		          <div class="work-text">
 		            <h3>BFG</h3>
 		            <h4>BFG | Winter 2016</h4>
@@ -326,11 +336,13 @@
 		                <li>JAVASCRIPT / ANGULARJS</li>
 		                <li>WORDPRESS</li>
 		              </ul>
-		            </div><a class="launch-link" href="https://bfgcom.com" target="_blank">VIEW WEBSITE</a>
+		            </div><a class="launch-link" href="https://bfgcom.com" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'BFG' })">VIEW WEBSITE</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="https://truckerterritory.progressivecommercial.com" target="_blank"><img src="images/trucker-territory.png" alt="Sample image of Off the Coast project"/></a></div>
+		          <div class="work-image">
+			          <a href="https://truckerterritory.progressivecommercial.com" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Trucker Territory' })">
+				          <img src="images/trucker-territory.png" alt="Sample image of Off the Coast project"/></a></div>
 		          <div class="work-text">
 		            <h3>Trucker Territory</h3>
 		            <h4>BFG | Spring 2016</h4>
@@ -343,11 +355,11 @@
 		                <li>JAVASCRIPT / ANGULARJS</li>
 		                <li>WORDPRESS</li>
 		              </ul>
-		            </div><a class="launch-link" href="https://truckerterritory.progressivecommercial.com" target="_blank">VIEW WEBSITE</a>
+		            </div><a class="launch-link" href="https://truckerterritory.progressivecommercial.com" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Trucker Territory' })">VIEW WEBSITE</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
-		          <div class="work-image"><a href="http://averythomas.pythonanywhere.com/" target="_blank"><img src="images/gogolf.png" alt="Sample image of go golf project"/></a></div>
+		          <div class="work-image"><a href="http://averythomas.pythonanywhere.com/" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Go Golf' })"><img src="images/gogolf.png" alt="Sample image of go golf project"/></a></div>
 		          <div class="work-text">
 		            <h3>Go Golf</h3>
 		            <h4>UNC Chapel Hill | Spring 2015</h4>
@@ -359,12 +371,12 @@
 		                <li>CSS / SCSS</li>
 		                <li>PYTHON / DJANGO</li>
 		              </ul>
-		            </div><a class="launch-link" href="http://averythomas.pythonanywhere.com/" target="_blank">VIEW WEBSITE</a>
+		            </div><a class="launch-link" href="http://averythomas.pythonanywhere.com/" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Go Golf' })">VIEW WEBSITE</a>
 		          </div>
 		        </div>
 		        <div class="work-item">
 			        <div class="work-image">
-				        <a href="http://averyethomas.com/j586/project03/" target="_blank">
+				        <a href="http://averyethomas.com/j586/project03/" target="_blank" onclick="gtag('event', 'Click - Image', { 'event_category' : 'Portfolio', 'event_label' : 'Engineering Occupations' })">
 					        <img src="images/engineering-occupations.png" alt="Sample image of engineering occupations project"/>
 					    </a>
 					</div>
@@ -381,7 +393,7 @@
 				                <li>DATA VISUALIZATION</li>
 							</ul>
 						</div>
-						<a class="launch-link" href="http://averyethomas.com/j586/project03/" target="_blank">VIEW WEBSITE</a>
+						<a class="launch-link" href="http://averyethomas.com/j586/project03/" target="_blank" onclick="gtag('event', 'Click - Button', { 'event_category' : 'Portfolio', 'event_label' : 'Engineering Occupations' })">VIEW WEBSITE</a>
 					</div>
 		        </div>
 		    </div>
@@ -391,11 +403,11 @@
 		      	</div>
 		      	<div class="social">
 			      	<ul>
-				      	<li><a href="mailto:averyethomas@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-				      	<li><a href="http://instagram.com/averyethomas" target="_blank"><i class="fab fa-instagram"></i></a></li>
-				      	<li><a href="http://twitter.com/averyethomas" target="_blank"><i class="fab fa-twitter"></i></a></li>
-				      	<li><a href="https://www.linkedin.com/in/averyethomas/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-				      	<li><a href="http://github.com/averyethomas" target="_blank"><i class="fab fa-github"></i></a></li>
+				      	<li><a href="mailto:averyethomas@gmail.com" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'Email' })"><i class="far fa-envelope"></i></a></li>
+				      	<li><a href="http://instagram.com/averyethomas" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'Instagram' })"><i class="fab fa-instagram"></i></a></li>
+				      	<li><a href="http://twitter.com/averyethomas" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'Twitter' })"><i class="fab fa-twitter"></i></a></li>
+				      	<li><a href="https://www.linkedin.com/in/averyethomas/" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'LinkedIn' })"><i class="fab fa-linkedin-in"></i></a></li>
+				      	<li><a href="http://github.com/averyethomas" target="_blank" onclick="gtag('event', 'Click', { 'event_category' : 'Contact', 'event_label' : 'Github' })"><i class="fab fa-github"></i></a></li>
 				    </ul>
 				</div>
 			</footer>
